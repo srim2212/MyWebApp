@@ -1,0 +1,13 @@
+name: A sample workflow file
+on: push
+jobs:
+  build-job:
+    name: Demo website Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/chekcout@v1
+      name: Checkout code
+    - name: Checkout Code
+      run: echo This is a Demo website!
+    - name: Index content
+      run: cat index.html
