@@ -5,9 +5,9 @@ jobs:
     name: Demo website Action
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/chekout@v1
-      name: Checkout code
-    - name: Checkout Code
+    - uses: actions/checkout@v1
+      name: Check out code
+    - name: Check out Code
       run: echo This is a Demo website!
     - name: Index content
       run: cat index.html
