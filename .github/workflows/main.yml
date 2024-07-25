@@ -10,4 +10,9 @@ jobs:
     - name: Echo message
       run: echo This is a Demo website!
     - name: Index content
-      run: cat index.html
+      run: |
+        cat index.html
+        cat products.html
+        echo "This is line1"
+        echo "This is line2"
+        echo "The End"
