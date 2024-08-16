@@ -1,23 +1,23 @@
-name: A sample workflow file
-on: 
-  workflow_dispatch:
-  push:
-    paths:
-      - '**'
-      - '!.github/**'
-jobs:
-  build-job:
-    name: Demo website Action
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-      name: Check out code
-    - name: Echo message
-      run: echo This is a Demo website!
-    - name: Index content
-      run: |
-        cat index.html
-        cat products.html
-        echo "This is line1"
-        echo "This is line2"
-        echo "The End"
+# name: A sample workflow file
+# on: 
+#   workflow_dispatch:
+#   push:
+#     paths:
+#       - '**'
+#       - '!.github/**'
+# jobs:
+#   build-job:
+#     name: Demo website Action
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v1
+#       name: Check out code
+#     - name: Echo message
+#       run: echo This is a Demo website!
+#     - name: Index content
+#       run: |
+#         cat index.html
+#         cat products.html
+#         echo "This is line1"
+#         echo "This is line2"
+#         echo "The End"
